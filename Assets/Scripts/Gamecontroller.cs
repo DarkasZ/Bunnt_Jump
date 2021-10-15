@@ -5,7 +5,7 @@ using UnityEngine;
 public class Gamecontroller : MonoBehaviour
 {
     public float speed = 1.0f;
-    public float speed2 = 1.0f;
+    
 
     Rigidbody2D rigidbody;
 
@@ -25,14 +25,7 @@ public class Gamecontroller : MonoBehaviour
         {
            f = new Vector2(-speed,0);
         }
-        else if(Input.GetKey(KeyCode.W))
-        {
-           f = new Vector2(0,speed2);
-        }
-        else if(Input.GetKey(KeyCode.S))
-        {
-           f = new Vector2(0,-speed2);
-        }
+        
        
        rigidbody.AddForce(f);
     }
