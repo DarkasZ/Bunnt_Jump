@@ -16,10 +16,11 @@ public class SpikeDMG : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Spike"))
+        if(collision.CompareTag("Untagged"))
         {
 
              Debug.Log("Take Damage");
+             SceneManager.LoadScene("SampleScene");
             
             Gameover.gameObject.SetActive(true);
             ResetBtn.gameObject.SetActive(true); 
@@ -30,7 +31,7 @@ public class SpikeDMG : MonoBehaviour
     }
     public void Restartbutton()
     {
-        SceneManager.LoadScene("SampleScene");
+        
     }
 
 }

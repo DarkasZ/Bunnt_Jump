@@ -11,6 +11,8 @@ public class Jumpable : MonoBehaviour
         if(collision.CompareTag("Platform"))
         {
             Debug.Log("jump");
+            
+            
 
             Rigidbody2D rigidbody = gameObject.GetComponentInParent<Rigidbody2D>();
             rigidbody.AddForce(new Vector2(0, jumpforce),ForceMode2D.Impulse);
