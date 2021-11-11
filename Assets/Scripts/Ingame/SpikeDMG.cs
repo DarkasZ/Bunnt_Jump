@@ -10,8 +10,7 @@ public class SpikeDMG : MonoBehaviour
     public Button ResetBtn;
     void Start()
     {
-        Gameover.gameObject.SetActive(false);
-        ResetBtn.gameObject.SetActive(false);
+        
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -22,16 +21,11 @@ public class SpikeDMG : MonoBehaviour
              Debug.Log("Take Damage");
              SceneManager.LoadScene("SampleScene");
             
-            Gameover.gameObject.SetActive(true);
-            ResetBtn.gameObject.SetActive(true); 
+            
 
         }
      
 
     }
-    public void Restartbutton()
-    {
-        
-    }
-
+ 
 }

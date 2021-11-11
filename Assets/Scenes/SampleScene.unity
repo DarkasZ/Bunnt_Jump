@@ -400,7 +400,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.139
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1301,6 +1301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  f: 0
   animator: {fileID: 824314754}
   Score: 0
   horizontalMove: 0
@@ -1367,7 +1368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55d934e0781cb4a4cb34c977c93ea71b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpforce: 13
+  jumpforce: 14
 --- !u!61 &830017633
 BoxCollider2D:
   m_ObjectHideFlags: 0
